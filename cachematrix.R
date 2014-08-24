@@ -46,6 +46,8 @@ cacheSolve <- function(x, ...) {
 
 ##  Test Cases
 
+## > a<-makeCacheMatrix()
+
 ## > a$set(matrix(4:7,2,2))
 ## >  cacheSolve(a)
 ## [,1] [,2]
