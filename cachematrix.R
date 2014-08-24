@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+
 ## This function creates a special "matrix" object that can cache its inverse
 ## If the matrix inverse has already been calculated, it will instead 
 ## find it in the cache and return it, and not calculate it again.
@@ -43,3 +44,16 @@ cacheSolve <- function(x, ...) {
  }
 }
 
+##  Test Cases
+
+## > a$set(matrix(4:7,2,2))
+## >  cacheSolve(a)
+## [,1] [,2]
+## [1,] -3.5    3
+## [2,]  2.5   -2
+
+## > a$set(matrix(11:14,2,2))
+## > cacheSolve(a)
+## [,1] [,2]
+## [1,]   -7  6.5
+## [2,]    6 -5.5
